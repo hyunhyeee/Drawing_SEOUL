@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Poor+Story&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Jua&family=Poor+Story&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Gamja+Flower&family=Jua&family=Poor+Story&display=swap');
+
+
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.maincolor {
+  /* position: relative; */
+  width: 80vw;
+  height: 100vh;
+}
+
+.mainPage-container {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  /* 최대 너비를 화면 크기로 제한 */
+  height: 100vh;
+  background-color: #f5f7fa;
+  overflow: hidden;
+}
+
+.textPhrase {
+  position: absolute;
+  /* top: 150px;
+  right: 300px; */
+}
+
+.textPhrase1 {
+  position: absolute;
+  width: auto;
+  top: 100px;
+  right: 100px;
+  font-family: "Gamja Flower";
+  font-size: 2.4vw;
+}
+
+.textPhrase2 {
+  position: absolute;
+  width: 300px;
+  right: 70px;
+  top: 200px;
+  font-family: "Gamja Flower";
+  font-size: 20px;
+}
+
+.textPhrase3 {
+  position: absolute;
+  width: 400px;
+  right: 60px;
+  top: 300px;
+  font-family: "Gamja Flower";
+  font-size: 20px;
+}
+
+.startframe {
+  position: absolute;
+  top: 400px;
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  font-family: "Gamja Flower";
+  font-size: 30px;
+}
+
+.dice-icon {
+  color: #1900ffd2;
+  margin-bottom: 10px;
+}
+
+.startframe button {
+  margin-top: 20px;
+  font-size: 2vw;
+  /* 버튼 글자 크기를 반응형으로 조정 */
+  padding: 1vw 2vw;
+  /* 반응형 간격 설정 */
+  /* padding: 10px 30px;
+  font-size: 30px; */
+  cursor: pointer;
+  background-color: #73b6e6;
+  color: white;
+  border: none;
+  font-family: "Gamja Flower";
+  border-radius: 20px;
+}

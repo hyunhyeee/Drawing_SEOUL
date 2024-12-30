@@ -1,0 +1,207 @@
+/* src/styles/EditMap.css */
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.edit-map-page {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+}
+
+.edit-map-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-map-left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit-map-left-header {
+  display: flex;
+  align-items: center;
+  left: 10px;
+}
+
+.edit-map-left-header-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.edit-map-left-header-text {
+  font-size: 30px;
+  margin: 0;
+  font-family: 'Poor Story', cursive;
+}
+
+.edit-map-image {
+  width: 250px;
+  height: 300px;
+}
+
+.edit-map-pink-line {
+  left: 50px;
+  width: 490px;
+  height: 30px;
+  margin-top: 50px;
+}
+
+.edit-map-right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 50px 200px;
+}
+
+.edit-map-right-content {
+  position: relative;
+  z-index: 1;
+}
+
+.edit-map-right-text {
+  font-size: 20px;
+  /* margin-bottom: 20px; */
+  /* text-align: center; */
+  top: 50px;
+  left: 110px;
+  font-family: 'Poor Story', cursive;
+}
+
+.edit-map-ellipse {
+  position: absolute;
+  left: -210px;
+  width: 850px;
+  height: 810px;
+}
+
+.edit-map-image-right {
+  display: flex;
+  top: 50px;
+  left: 150px;
+  width: 250px;
+  height: 300px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-map-right-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  /* margin-top: 20px; */
+}
+
+/* .edit-map-right-buttons .edit-map-button {
+  margin-left: 0;
+  position: relative;
+  top: 12px;
+} */
+
+.edit-map-button-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
+.edit-map-button {
+  left: 200px;
+  top: 80px;
+  width: 150px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #d5e9f5;
+  color: #000000;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Poor Story', cursive;
+}
+
+.edit-map-button:hover {
+  background-color: #b0d4ec;
+}
+
+.edit-map-upload-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.edit-map-button-text {
+  font-size: 15px;
+  text-align: center;
+}
+
+.edit-map-button.delete-button {
+  background-color: #ff6b6b;
+  /* 예: 빨간색 배경 */
+  color: white;
+  margin-left: 10px;
+}
+
+.edit-map-button.delete-button:hover {
+  background-color: #ff5252;
+  /* 호버 효과 */
+}
+
+/* 새로운 버튼 행 스타일 */
+.edit-map-button-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  left: 100px;
+  top: 80px;
+  gap: 20px;
+  /* 버튼 간격 설정 */
+  margin-top: 10px;
+  /* 버튼들 사이 간격 추가 */
+}
+
+.save-button,
+.reset-button {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.save-button:hover,
+.reset-button:hover {
+  background-color: #e0e0e0;
+  border-color: #999;
+}
+
+.edit-map-button-row button {
+  width: 150px;
+  /* 버튼의 너비를 동일하게 설정 */
+  height: 50px;
+  /* 버튼의 높이를 동일하게 설정 */
+}

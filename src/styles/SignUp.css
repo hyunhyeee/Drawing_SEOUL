@@ -1,0 +1,202 @@
+/* 회원가입 페이지 */
+.signup-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  left: 350px;
+  max-width: 500px;
+  max-height: 600px;
+  background: #f7f8fc;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  margin: 12vh;
+  box-sizing: border-box;
+}
+
+
+/* 제목 스타일 */
+h1 {
+  margin-bottom: 24px;
+  font-size: 26px;
+  color: #333;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+/* 다크 모드 - 제목 */
+body.dark-mode .signup-page h1 {
+  color: #f7f8fc;
+}
+
+/* 입력 필드 및 내용 컨테이너 */
+.loginContents {
+  width: 100%;
+}
+
+.inputWrap {
+  margin-bottom: 20px;
+}
+
+.inputWrap label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* 다크 모드 - 라벨 */
+body.dark-mode .inputWrap label {
+  color: #ddd;
+}
+
+.inputWrap input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s ease;
+  background: #f9f9f9;
+}
+
+.inputWrap input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+  outline: none;
+  background: #ffffff;
+}
+
+/* 다크 모드 - 입력 필드 */
+body.dark-mode .inputWrap input {
+  background: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+body.dark-mode .inputWrap input:focus {
+  border-color: #6a9ff1;
+  box-shadow: 0 0 8px rgba(106, 159, 241, 0.5);
+}
+
+/* 회원가입 버튼 */
+.signup {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #4a90e2, #357ab8);
+  /* 버튼 그라데이션 */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
+  margin-top: 15px;
+}
+
+.signup:hover {
+  background: linear-gradient(135deg, #357ab8, #285b92);
+  /* 더 어두운 파란색 */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(53, 122, 184, 0.3);
+}
+
+.signup:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 다크 모드 - 버튼 */
+body.dark-mode .signup {
+  background: linear-gradient(135deg, #333, #222);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .signup:hover {
+  background: linear-gradient(135deg, #444, #333);
+}
+
+/* 비밀번호 입력 필드 */
+.password-field {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.password-field input {
+  width: 100%;
+  padding: 12px;
+  padding-right: 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  background: #f9f9f9;
+}
+
+.password-field input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+  outline: none;
+  background: #ffffff;
+}
+
+/* 다크 모드 - 비밀번호 필드 */
+body.dark-mode .password-field input {
+  background: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+body.dark-mode .password-field input:focus {
+  border-color: #6a9ff1;
+  box-shadow: 0 0 8px rgba(106, 159, 241, 0.5);
+}
+
+/* 비밀번호 토글 아이콘 */
+.password-toggle {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #aaa;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.password-toggle:hover {
+  color: #4a90e2;
+}
+
+/* 다크 모드 - 토글 아이콘 */
+body.dark-mode .password-toggle {
+  color: #ccc;
+}
+
+body.dark-mode .password-toggle:hover {
+  color: #6a9ff1;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 480px) {
+  .signup-page {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .signup {
+    font-size: 14px;
+    padding: 12px;
+  }
+}

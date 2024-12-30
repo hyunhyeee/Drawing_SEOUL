@@ -1,0 +1,194 @@
+/* 로그인 페이지 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-page {
+  width: 100vw;
+  max-width: 100%;
+  height: 70vh;
+  max-height: 100%;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  left: 350px;
+  max-width: 500px;
+  max-height: 500px;
+  background: #f7f8fc;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  margin: 10vh;
+  box-sizing: border-box;
+}
+
+
+h1 {
+  margin-bottom: 24px;
+  font-size: 26px;
+  color: #333;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+/* 다크 모드 - h1 */
+body.dark-mode .login-page h1 {
+  color: #f7f8fc;
+}
+
+/* 입력 필드 */
+.inputWrap {
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.inputWithIcon,
+.inputWrap {
+  position: relative;
+  width: 100%;
+}
+
+.inputWrap input,
+.inputWithIcon input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  box-sizing: border-box;
+  background: #f9f9f9;
+}
+
+.inputWrap input:focus,
+.inputWithIcon input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+  outline: none;
+  background: #fff;
+}
+
+/* 다크 모드 - 입력 필드 */
+body.dark-mode .inputWrap input,
+body.dark-mode .inputWithIcon input {
+  background: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+body.dark-mode .inputWrap input:focus,
+body.dark-mode .inputWithIcon input:focus {
+  border-color: #6a9ff1;
+  box-shadow: 0 0 8px rgba(106, 159, 241, 0.5);
+}
+
+/* 비밀번호 토글 */
+.password-toggle {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #aaa;
+  font-size: 20px;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.password-toggle:hover {
+  color: #4a90e2;
+}
+
+body.dark-mode .password-toggle {
+  color: #ccc;
+}
+
+body.dark-mode .password-toggle:hover {
+  color: #6a9ff1;
+}
+
+/* 버튼 */
+button,
+.signup-button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #4a90e2, #357ab8);
+  /* 버튼 그라데이션 */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  text-align: center;
+  display: block;
+  box-sizing: border-box;
+  margin-top: 12px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(74, 144, 226, 0.15);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #357ab8, #285b92);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(53, 122, 184, 0.3);
+}
+
+.signup-button {
+  background: linear-gradient(135deg, #6c757d, #5a6268);
+  box-shadow: 0 4px 8px rgba(108, 117, 125, 0.15);
+}
+
+.signup-button:hover {
+  background: linear-gradient(135deg, #5a6268, #454d54);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(90, 98, 104, 0.3);
+}
+
+button:active,
+.signup-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 다크 모드 - 버튼 */
+body.dark-mode button,
+body.dark-mode .signup-button {
+  background: linear-gradient(135deg, #333, #222);
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode button:hover,
+body.dark-mode .signup-button:hover {
+  background: linear-gradient(135deg, #444, #333);
+}
+
+/* 반응형 디자인 */
+@media (max-width: 480px) {
+  .login-page {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  button,
+  .signup-button {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
